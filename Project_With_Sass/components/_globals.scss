@@ -5,6 +5,14 @@ $color-claro: #FFFFFF;
 $color-secondary: #8841DA;
 $color-variation: #3f579a;
 
+@mixin box {
+  border-radius: 20px;
+  box-shadow: 0px 20px 33px 0px rgba(0,0,0,0.50);
+  color: $color-primary;
+  background-color: $color-claro;
+}
+
+
 * {
   box-sizing: border-box;
 }

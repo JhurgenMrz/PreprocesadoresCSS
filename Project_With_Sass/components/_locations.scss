@@ -3,9 +3,8 @@
 	height: 90px;
 	margin: 30px auto;
 	padding: 20px 0 0 50px;
-	background-color: $color-claro;
-	border-radius: 20px;
-	color: $color-primary;
+	@include box;
+
 	i{
 		display: block;
 		float: left;
