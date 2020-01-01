@@ -1,10 +1,17 @@
+$Font1: "Lato", sans-serif;
+$Font2: "Oswald", sans-serif;
+$color-primary: #333333;
+$color-claro: #FFFFFF;
+$color-secondary: #8841DA;
+$color-variation: #3f579a;
+
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family:  $Font1;
 }
 
 main {
@@ -16,31 +23,62 @@ main {
 .perfil {
   width: 50%;
   padding-top: 50px;
+  color: $color-claro;
+  background-color: $color-secondary;
   &__avatar {
     display: block;
     margin: 0 auto;
     border-radius: 50em;
   }
   &__nombre {
-	  text-transform: uppercase;
-	  text-align: center;
-	  font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+	font-size: 20px;
+	font-family: $Font2;
   }
   &__titulo {
-	  text-transform: uppercase;
-	  text-align: center;
-	  font-weight: 700;
-	  font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
   }
-  &__boton{
-	  display: flex;
-	  width: 100px;
-	  height: 40px;
-	  margin: 15px auto;
-	  padding-top: 15px;
-	  border-radius: 20px;
-	  text-decoration: none;
-	  text-transform: uppercase;
-	  text-align: center;
+  &__boton {
+    display: flex;
+    width: 100px;
+    height: 40px;
+    margin: 0 auto;
+    padding-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+	justify-content: center;
+	font-family: $Font2;
+	color: $color-claro;
+  }
+}
+
+.estadistica--perfil {
+  display: flex;
+  width: 50%;
+  height: 90px;
+  padding-top: 15px;
+  margin: 0 auto;
+  justify-content: space-around;
+  border-radius: 20px;
+  background-color: $color-claro;
+  h3 {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+	text-transform: uppercase;
+	font-family: $Font2;
+  }
+  span {
+    font-size: 12px;
+    text-align: center;
+	text-transform: uppercase;
+	font-family: $Font2;
   }
 }
