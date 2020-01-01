@@ -12,8 +12,25 @@ $color-variation: #3f579a;
   background-color: $color-claro;
 }
 
+@mixin titles($font) {
+  @if $font==$Font1{
+    font-family: $Font1;
+  } @else {
+    font-family: $Font2;
+    text-transform: uppercase;
+  }
+}
+
 @function get-opacity($color, $nivel){
   @return rgba($color, $nivel);
+}
+
+//Loops in Sass
+@each $header, $size in (h1: 30px, h2:25px, h3: 20px) {
+  #{$header}{
+    font-size: $size;
+    margin: 0
+  }
 }
 
 
@@ -23,7 +40,7 @@ $color-variation: #3f579a;
 
 body {
   margin: 0;
-  font-family:  $Font1;
+  @include titles($Font1);
 }
 
 main {
